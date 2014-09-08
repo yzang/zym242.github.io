@@ -6,14 +6,33 @@
     <meta name="description" content="SHIELD - Free Bootstrap 3 Theme">
     <meta name="author" content="Carlos Alvarez - Alvarez.is - blacktie.co">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
-
+	<script src="jquery.min.js"></script>
     <title> FiteCity</title>
 	<script src="hello.js"></script>
     
   </head>
 
   <body>
+  <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '{287707114754534}',
+          xfbml      : true,
+          version    : 'v2.0'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+  
+  
   Test
-  <button >login</button>
+  <button class="loginBtn">login</button>
   </body>
 </html>
